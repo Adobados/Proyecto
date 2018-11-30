@@ -1,0 +1,12 @@
+{% extends 'Solar/Admin.html' %}
+{% block content %}
+
+    <div align="center">
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Guardar Productos</button>
+    </form>
+
+</div>
+            {% endblock %}
+

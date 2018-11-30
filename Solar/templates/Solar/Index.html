@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inicio-Solaren</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url({% static 'Imagenes/15570.jpg'%});
+}
+</style>
+<link href="{% static 'CSS/Menu.css'%}" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+}
+#apDiv1 {
+	position: absolute;
+	width: 68px;
+	height: 60px;
+	z-index: 1;
+	left: 1137px;
+	top: 685px;
+}
+#apDiv2 {
+	position: absolute;
+	width: 63px;
+	height: 60px;
+	z-index: 2;
+	left: 1238px;
+	top: 685px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 192px;
+	height: 64px;
+	z-index: 3;
+	left: 1129px;
+	top: 661px;
+}
+</style>
+<link href="{% static 'CSS/Menu.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body class=>
+<header>
+	  <section class="wrapper">
+			<nav>
+				<ul>
+
+					<li><a href="./" >Inicio</a></li>
+					<li><a href="#Vision">Vision</a></li>
+                      <li><a href="#Mision">Mision</a></li>
+					<li><a href="Productos">Productos</a></li>
+                    <li><a href="Inventario">Contacto</a></li>
+                    <li><a href="Admin">Admin</a></li>
+
+				</ul>
+		    </nav>
+  </section>
+</header>
+
+<img src="{% static 'Imagenes/Inicio.png'%}" width="1359" height="645" alt="Inicio" longdesc="http://www.Solaren.mx">
+<div>
+  <div >
+    <table width="1365" height="103" border="1">
+      <tr>
+        <td width="1433" height="97" align="center" bgcolor="#000000"><h1>-VISION-</h1>
+        <div id="apDiv3">visitanos</div></td>
+          <div id="apDiv2"><a href="https://www.Instagram.com"><img src="{% static 'Imagenes/instagram.jpeg'%}" width="66" height="61"></a></div>
+  <p>&nbsp;</p>
+          <div id="apDiv1"> <a href="https://www.facebook.com/soyAnimaniaco"><img src="{% static 'Imagenes/facepng.png'%}" width="68" height="54"></a></div>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<div id="Vision"><table  width="1365" height="103" border="0">
+ ¡
+        <tr align="center"><h2>
+            </br></br></br></br>
+           <p align="center">La vision de <font size="8"> <t style="color:red">Solaren</t></font> es que quiere ser reconocida como una organización líder </p>
+            <p align="center"> y consolidada en materia ambiental, comprometida con el mejoramiento</p>
+            <p align="center"> de la calidad de vida de la población </p>
+            <p align="center"> y el manejo sostenible de los recursos naturales,</p>
+             <p align="center">  en un mundo donde los pueblos vivan en igualdad y dignidad y en armonía con</p>
+            <p align="center">la naturaleza.</p>
+
+<p align="center">Para ello, pone a disposición las mejores capacidades profesionales para garantiz</p>
+            <p align="center">altos niveles de eficiencia en sus actuaciones a la vez que adquiere un fuerte compromiso</p>
+            <p align="center">con todos sus grupos de interés para el </p>
+             <p align="center">cumplimiento de su misión.</p>
+             </h2> </tr>
+
+
+</table>
+    <div>
+  <div >
+    <table width="1365" height="103" border="1">
+      <tr>
+        <td width="1433" height="97" align="center" bgcolor="#000000"><h1>-MISION-</h1>
+        <div id="apDiv3">visitanos</div></td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+</div>
+<div id="Mision"><table  width="1365" height="103" border="0">
+ ¡
+        <tr align="center"><h2>
+            </br></br></br></br>
+
+            <p align="center">La misión de <font size="8"> <t style="color:red">Solaren</t></font> es la de contribuir a la conservación y manejo sostenible</p>
+            <p align="center"> de los recursos naturales y del medio ambiente desde la justicia y solidaridad,</p>
+            <p align="center"> participando en la ejecución y administración de proyectos estratégicos </p>
+            <p align="center">  de desarrollo ambiental en el ámbito local, nacional e internacional.</p>
+             <p align="center"> Estos son los lineamientos generales que deben regir nuestro actuar día a día</p>
+            <p align="center">dentro de la ONGDI, es deber de cada uno de nosotros interiorizarlos y alinear</p>
+            <p align="center">nuestros esfuerzos hacia la consecución de la visión.</p>
+            <p align="center" ><font size="8"> <t style="color:red">Solaren</t></font> se propone promover, participar, estimular e intervenir</p>
+            <p align="center"> en iniciativas de carácter ambiental con el fin de  </p>
+             <p align="center">potenciar y desarrollar estilos de vida sostenibles</p>
+             </h2> </tr>
+
+
+</table>
+    <div>
+  <div id="Contacto">
+    <table width="1365" height="103" border="1">
+      <tr>
+        <td width="1433" height="97" align="center" bgcolor="#000000"><h1>-Contacto-</h1>
+          <br><br><br>
+
+            <p>Telefonos :  Oficina 4921102328  extencion #111
+            </p>
+            <P>  Correo electronico </P>
+            <p>--HijoDeTuPun.teria@gmail.com--</p>
+
+          <p><input action="{% url 'BuscaProducto' %}" type="submit" value="Contactanos" ></p>
+            </tr>
+    </table>
+
+  </div>
+
+</div>
+
+</div>
+ <div>
+  <div id="usa">
+    <table width="1365" height="103" border="1">
+      <tr>
+        <td width="1433" height="97" align="center" bgcolor="#000000"><h1></h1>
+            <br> <br> <br>
+        <p>Copyright © 2018</p>
+            <p>Derechos Reservados @D.A.N.I Inc</p>
+
+      </tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

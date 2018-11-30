@@ -1,0 +1,109 @@
+{% extends 'Solar/base.html' %}
+{% load static %}
+{% block title %}-Comprar-{% endblock %}
+{% block content %}
+    <div id="apDiv17">
+  <table width="844" height="1876" border="0">
+    <tr align="center" id="Producto1">
+      <td width="456" height="590"><h2>Boiler solar 10 tubos</h2><img  src="{% static 'Productos/bsolar1.jpg'%}" width="197" height="255">
+          <h2>Boiler solar Marca Emprosol</h2>
+          <h2>Capacidad para 16 litros</h2>
+          <h2>Dimenciones:1.10 mts x 50 cm</h2>
+
+          <h2>Precio:$4500(+instalacion)</h2></td>
+      <td width="372"> <div align="left">
+    <form method="POST" class="Compras">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Solicitar Presupuesto</button>
+    </form>
+
+
+</div></td>
+    </tr>
+
+      <tr align="center" id="Producto2">
+      <td width="456" height="590"><h2>Boiler solar 12 tubos</h2><img  src="{% static 'Productos/images (3).jpg'%}" width="197" height="255">
+           <h2>Boiler solar Marca Foset</h2>
+          <h2>Capacidad para 20 litros</h2>
+          <h2>Dimenciones:1.10 mts x 50 cm</h2>
+          <h2>Precio:$7500(+instalacion)</h2></td>
+      <td width="372"> <div align="left">
+    <form method="POST" class="Compras">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Solicitar Presupuesto</button>
+    </form>
+
+
+</div></td>
+    </tr>
+
+       <tr align="center" id="Producto3">
+      <td width="456" height="590"><h2>Boiler solar 16 tubos</h2><img  src="{% static 'Productos/images (4).jpg'%}" width="197" height="255">
+           <h2>Boiler solar Marca Enso</h2>
+          <h2>Capacidad para 24 litros</h2>
+          <h2>Dimenciones:1.25 mts x 60 cm</h2>
+          <h2>Precio:$12000(+instalacion)</h2></td>
+      <td width="372"> <div align="left">
+    <form method="POST" class="Compras">{% csrf_token %}
+        {{ form.as_p }}
+        <button  type="submit" class="save btn btn-default">Solicitar Presupuesto</button>
+    </form>
+
+
+</div></td>
+    </tr>
+
+       <tr align="center" id="Producto4">
+      <td width="456" height="590"><h2>Foco Led Pack 4</h2><img  src="{% static 'Productos/images (9).jpg'%}" width="197" height="255">
+           <h2>Foco led alta potencia </h2>
+          <h2>Duracion 1000 hrs</h2>
+          <h2>Dimenciones: 8 x 16 cm</h2>
+          <h2>Precio:$1800(+Envio)</h2></td>
+      <td width="372"> <div align="left">
+    <form method="POST" class="Compras">{% csrf_token %}
+        {{ form.as_p }}
+        <button  type="submit" class="save btn btn-default">Solicitar Presupuesto</button>
+    </form>
+
+
+</div></td>
+    </tr>
+
+      <tr align="center" id="Producto5">
+      <td width="456" height="590"><h2>Foco Led Luz Fria 9w</h2><img  src="{% static 'Productos/descarga (3).jpg'%}" width="197" height="255">
+           <h2>Foco led luz fria 9w</h2>
+          <h2>Duracion 400 hrs</h2>
+          <h2>Dimenciones: 8 x 16 cm</h2>
+          <h2>Precio:$56(+Envio)</h2></td>
+      <td width="372"> <div align="left">
+    <form method="POST" class="Compras">{% csrf_token %}
+        {{ form.as_p }}
+        <button  type="submit" class="save btn btn-default">Solicitar Presupuesto</button>
+    </form>
+
+
+</div></td>
+    </tr>
+
+      <tr align="center" id="Producto6">
+      <td width="456" height="590"><h2>Panel Solar Portatil</h2><img  src="{% static 'Productos/images (7).jpg'%}" width="197" height="255">
+           <h2>Panel Solar Alta Duracion</h2>
+          <h2>Capacidad de almacenaje 1200 MH</h2>
+          <h2>Dimenciones: 30 x 20 cm </h2>
+          <h2>Precio:$2399(+Envio)</h2></td>
+      <td width="372"> <div align="left">
+    <form method="POST" class="Compras">{% csrf_token %}
+        {{ form.as_p }}
+        <button  type="submit" class="save btn btn-default">Solicitar Presupuesto</button>
+    </form>
+
+
+</div></td>
+    </tr>
+
+
+  </table>
+</div>
+
+
+            {% endblock %}

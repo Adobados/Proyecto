@@ -1,0 +1,21 @@
+{% extends 'Solar/Admin.html' %}
+{% block title %}-Inventario-{% endblock %}
+<br><br><br><br><br><br><br><br><br>
+
+{% block content %}
+    <br><br><br><br><br><br>
+
+
+    <div align="center">
+  <h1>Inserte codigo del producto </h1>  <form action="{% url 'BuscaProducto' %}" method="POST">
+        {% csrf_token %}
+        {% if error %}<h1>{{ error }}></h1>{% endif %}
+       <h1> <label for="Codigo"></label></h1>
+        <input type="text" id="Codigo" name="Codigo" placeholder="Codigo">
+        <input type="submit" value="Consultar">
+    </form>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+{% endblock content %}

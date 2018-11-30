@@ -1,0 +1,98 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+<!DOCTYPE html>
+<head>
+<meta content="text/html; charset=utf-8" />
+<title>{% block title %}Inventario{% endblock %}</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url({% static 'Imagenes/15570.jpg'%});
+}
+</style>
+<link href="{% static 'CSS/Menu.css'%}" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+}
+#apDiv1 {
+	position: absolute;
+	width: 68px;
+	height: 60px;
+	z-index: 1;
+	left: 1137px;
+	top: 685px;
+}
+#apDiv2 {
+	position: absolute;
+	width: 63px;
+	height: 60px;
+	z-index: 2;
+	left: 1238px;
+	top: 685px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 192px;
+	height: 64px;
+	z-index: 3;
+	left: 1129px;
+	top: 661px;
+}
+</style>
+<link href="{% static 'CSS/Menu.css'%}" rel="stylesheet" type="text/css">
+</head>
+
+<body class=>
+<header>
+	  <section class="wrapper">
+			<nav>
+				<ul>
+
+					<li><a href="../Admin" >Administracion</a></li>
+					<li><a href="../Datos">Inventario</a></li>
+                      <li><a href="../Inventario">Buscar</a></li>
+					<li><a href="../Formulario">Dar Alta</a></li>
+                    <li><a href="../FormularioVenta">Venta</a></li>
+                    <li><a href="../admin">Admin BD</a></li>
+
+				</ul>
+		    </nav>
+  </section>
+</header>
+
+
+<div align="center" background-color: #FF6600;>
+
+
+
+        <br><br><br><br>
+    <div align="center">
+    <h1 style="color: #cc1111"   >-Articulos Disponibles- </h1>
+        <h1>{% render_table inventario %}  </h1>
+</div>
+  
+
+  </div>
+
+</div>
+
+
+    <div>
+  <div id="Contacto">
+    <table width="1365" height="103" border="1">
+      <tr>
+        <td width="1433" height="97" align="center" bgcolor="#000000"><h1>-Contacto-</h1>
+
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+</div>
+</body>
+</html>
